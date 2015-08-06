@@ -1,0 +1,42 @@
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-08-06 09:38:22
+exit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-08-06 09:38:39
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-08-06 09:46:01
+project --topLevelPackage com.spt.workshop1
+jpa setup --provider HIBERNATE --database DERBY_EMBEDDED 
+entity jpa --class ~.domain.EmpType --testAutomatically 
+field string --fieldName empTypeName
+field string --fieldName empTypeCode
+entity jpa --class ~.domain.Address --testAutomatically 
+field string --fieldName village
+field string --fieldName houseNo
+field string --fieldName road
+entity jpa --class ~.domain.Employee --testAutomatically 
+field string --fieldName firstName
+field string --fieldName lastName
+field number --fieldName age --type java.lang.Integer
+field date --fieldName birthDay --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+web mvc setup
+web mvc all --package ~.web
+exit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-08-06 10:23:49
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-08-06 14:53:33
+focus --class ~.domain.Employee 
+field reference --fieldName empType --type ~.domain.EmpType --cardinality MANY_TO_ONE --fetch EAGER --joinColumnName  empType
+focus --class ~.domain.Address
+field reference --fieldName employee --type ~.domain.Employee --cardinality MANY_TO_ONE --fetch EAGER --joinColumnName employee 
+focus --class ~.domain.Employee
+field set --fieldName addresses --type ~.domain.Address --cardinality ONE_TO_MANY --fetch EAGER --mappedBy employee
+exit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-08-06 15:09:52
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-08-06 15:09:59
+perform tests
+perform package
+exit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-08-06 15:16:51
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-08-06 15:52:57
+focus --class ~.domain.EmpType
+finder list
+finder add --finderName findEmpTypesByEmpTypeNameLike
+exit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-08-06 15:55:47

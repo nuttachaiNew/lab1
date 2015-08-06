@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_spt_workshop1_domain_Address" modelAttribute="address" path="/addresses" versionField="Version" z="lx59ydap4FxM6DG2kuUeSkH7RTA=">
+        <field:input field="village" id="c_com_spt_workshop1_domain_Address_village" z="Xgai1N+6F+adIyC02XVLphTiqqM="/>
+        <field:input field="houseNo" id="c_com_spt_workshop1_domain_Address_houseNo" z="niBAwD1YBk19LZOc61sp6d+xxbI="/>
+        <field:input field="road" id="c_com_spt_workshop1_domain_Address_road" z="R5jE1+ZSp2HooM2t+4dGPV0soAY="/>
+        <field:select field="employee" id="c_com_spt_workshop1_domain_Address_employee" itemValue="id" items="${employees}" path="/employees" z="RfK6I3B6wwqZs5NMP+EUpkD+aHM="/>
+    </form:update>
+</div>

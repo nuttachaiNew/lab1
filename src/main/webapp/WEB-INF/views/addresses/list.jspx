@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_spt_workshop1_domain_Address" items="${addresses}" z="TYUkGHEc0TpCM/iBYv09/I0UL44=">
+        <table:table data="${addresses}" id="l_com_spt_workshop1_domain_Address" path="/addresses" z="+cEOQcgZjAeCfx947dPOAg+6TZY=">
+            <table:column id="c_com_spt_workshop1_domain_Address_village" property="village" z="gHPASo3Oz5kj8XEA1d7AQV9Z2x0="/>
+            <table:column id="c_com_spt_workshop1_domain_Address_houseNo" property="houseNo" z="2tjLDgtAGyYWl80naJ02Sqr+TTo="/>
+            <table:column id="c_com_spt_workshop1_domain_Address_road" property="road" z="x3hU0QpQ715Ezaqlbw6uAb/+yyI="/>
+            <table:column id="c_com_spt_workshop1_domain_Address_employee" property="employee" z="9aoRjiiQOBg+kDI6YdZD//j72FE="/>
+        </table:table>
+    </page:list>
+</div>

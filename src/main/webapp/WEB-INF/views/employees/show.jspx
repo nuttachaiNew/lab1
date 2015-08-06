@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_spt_workshop1_domain_Employee" object="${employee}" path="/employees" z="499+hGYCxwJfBK3scDZHy5S6mTE=">
+        <field:display field="firstName" id="s_com_spt_workshop1_domain_Employee_firstName" object="${employee}" z="I7asB43JwNRTVyn4uVlIBKK0XcA="/>
+        <field:display field="lastName" id="s_com_spt_workshop1_domain_Employee_lastName" object="${employee}" z="R1QbEiFAQFGZAiqHzD+YJFHPFi0="/>
+        <field:display field="age" id="s_com_spt_workshop1_domain_Employee_age" object="${employee}" z="BIqxYmwqLHQD3mtCQ0QLqS+zSfk="/>
+        <field:display date="true" dateTimePattern="${employee_birthday_date_format}" field="birthDay" id="s_com_spt_workshop1_domain_Employee_birthDay" object="${employee}" z="vt7IcHi/l18tJjKmT4sAIgbbJbw="/>
+        <field:display field="empType" id="s_com_spt_workshop1_domain_Employee_empType" object="${employee}" z="PeNpvABRFByqwQp7fc5cIh5HKmU="/>
+    </page:show>
+</div>

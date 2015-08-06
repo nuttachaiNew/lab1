@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_spt_workshop1_domain_Employee" items="${employees}" z="QKAx1fEBFBqxnLsieWig+DQK6rw=">
+        <table:table data="${employees}" id="l_com_spt_workshop1_domain_Employee" path="/employees" z="af/nX5SSpYg6e2V07Stssg/ME64=">
+            <table:column id="c_com_spt_workshop1_domain_Employee_firstName" property="firstName" z="UqcZE0QDHMV9p6KX9n0NafMsMWQ="/>
+            <table:column id="c_com_spt_workshop1_domain_Employee_lastName" property="lastName" z="KQitY+OMMWpSNT3TAo61YZQ7C2c="/>
+            <table:column id="c_com_spt_workshop1_domain_Employee_age" property="age" z="3L3x2M2Mw3xFK/yTk7Y7NOSSovs="/>
+            <table:column date="true" dateTimePattern="${employee_birthday_date_format}" id="c_com_spt_workshop1_domain_Employee_birthDay" property="birthDay" z="EdLkKYnw3wB+QVctL8WYj98HvxE="/>
+            <table:column id="c_com_spt_workshop1_domain_Employee_empType" property="empType" z="CxvZznq/lTsyW1DpeqK3iSjWf+g="/>
+        </table:table>
+    </page:list>
+</div>
