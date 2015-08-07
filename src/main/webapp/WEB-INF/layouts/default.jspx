@@ -20,14 +20,17 @@
 		    <tiles:insertAttribute name="header" ignore="true" />
 		    <div id="main" class="container">
 		    <div class="row">
-		    	<div class="col-sm-4">
+		    	<div class="col-sm-2">
 		    <tiles:insertAttribute name="menu" ignore="true" />   
 		    		</div>
-		    <div class="col-sm-8">
+		    <div class="col-sm-10">
 	    			<tiles:insertAttribute name="body" /> 
 		    </div>	
-		    		
-		    		<tiles:insertAttribute name="footer" ignore="true"/>
+		    </div>
+		    	<div class="row">
+		    	 <div class="well col-sm-12 ">	
+		    	 <tiles:insertAttribute name="footer" ignore="true"/>
+		    	 </div>
 		    	</div>
 		    </div>
 		</div>
